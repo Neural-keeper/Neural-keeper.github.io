@@ -1,3 +1,30 @@
 body {
   background-color: #fafaff;
 }
+
+div {
+  float: left;
+  max-width: 300px;
+}
+
+p{
+  font-family: 'Donegal One';
+  font-size: 15px;
+  color: #e8e5d8;
+  text-align: left;
+  margin: 0px 50px 15px;
+  border: 3px dashed #e8e5d8;
+  background-color:  #070740;
+  padding: 15px;
+}
+
+h3 {
+  font-family: 'Donegal One';
+  font-size: 20px;
+  color: #e8e5d8;
+  text-align: center;
+  margin: 0px 50px 15px;
+  border: 3px dashed white;
+  background-color:  #070740;
+  padding: 15px;
+}
