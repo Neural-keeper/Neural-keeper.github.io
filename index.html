@@ -1,9 +1,27 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel = "icon" href = "weblogo.png" type = "image/x-icon">
+        <link rel="icon" href="weblogo.png" type="image/x-icon">
+        <meta charset="UTF-8">
         <meta name = "viewport" content="width=device-width, initial-scale=1.0">
         <style>
+            .aboutme {
+                display: grid;
+                grid-template-columns: 80% 20%;
+            }
+            .aboutme > div {
+                background-color: #1a1424;
+                color:#e8e5d8;
+                font-family: 'Courier New', Courier, monospace;
+                font-size: 15px;
+                border: 3px solid #e8e5d8;
+                padding: 10px;
+            }
+            h3 {
+                font-family: 'Donegal';
+                font-size: 30px;
+                color:bisque;
+            }
             .projects {
                 display: grid;
                 grid-template-columns: auto auto;
@@ -25,14 +43,26 @@
                 font-size: 30px;
                 color:bisque;
             }
+            .projects > div > img {
+                border: 2px solid #070740;
+            }
+            .projects > div > img:hover {
+                border: 3px solid #e8e5d8;
+            }
             .header {
-                background-color: #070740;
+                background: linear-gradient(#535070 5%, #070740 95%);
                 text-align: center;
                 font-size: 35px;
                 font-family: 'Donegal';
                 color: bisque;
                 padding: 5%;
                 border: 3px solid #e8e5d8;
+            }
+            .center {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 50%;
             }
             a {
                 color:bisque;
@@ -47,7 +77,36 @@
         <div class = 'header'>
             <h1> Sahasra Kondapalli </h1>
         </div>
-        <div class = 'header' style = 'padding:5px; font-size:25px'>
+        <div class="header" style = 'padding: 5px; font-size: 25px; background: linear-gradient(#535070 5%, #1a1424 95%);'>
+            <h1>About Me</h1>
+        </div>
+        <div class="aboutme">
+            <div>
+                <p>Hey, I'm Sahasra Kondapalli, an aspiring software
+                    developer currently a freshman in Comp Sci at USF!
+                    I hope to develop as a developer through the coming
+                    years and create solutions for all your niche problems!
+                    I hope to combine the fields of medicine and 
+                    computer science to forward the development in both fields.
+                </p>
+                <p>
+                    <b>E-mail:</b> sahasrakondapalli43@gmail.com
+                    <br>
+                    <b>Github:</b> <a href="https://github.com/Neural-keeper">Neural-keeper</a>
+                    <br>
+                    <b>Instagram:</b> <a href="https://www.instagram.com/sahasra.writes.fantasty/">Author Account</a>
+                    <br>
+                    <b>Linkedin:</b> <a href="https://www.linkedin.com/in/sahasra-kondapalli-560383332/">Linkedin Linked Here</a>
+                    <br>
+                    <b>Handshake:</b> <a href="https://usf.joinhandshake.com/profiles/mcxxqp">My Handshake Account</a>
+                </p>
+            </div>
+            <div>
+                <img src="sahasra-logo.jpg" alt="A picture of me!" width="128" class="center">
+                <p style="text-align: center;">Sahasra Kondapalli</p>
+            </div>
+        </div>
+        <div class = 'header' style = 'padding:5px; font-size:25px;'>
             <h1>Projects</h1>
         </div>
         <div class="projects">
@@ -97,12 +156,6 @@
                     self-brew their own review tests.
                 </p>
                 <a href="https://sahasrakondapalli43-gmail-com.trinket.io/sites/examinator">Demo</a>
-            </div>
-            <div>
-                <h3>Hey there</h3>
-            </div>
-            <div>
-                <h3>we come in peace</h3>
             </div>
         </div>
     </body>
