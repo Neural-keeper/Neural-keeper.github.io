@@ -1,73 +1,102 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="stylesheet.css">
-  </head>
-  <body>
-    <section>
-      <p style="font-size: 8px">HEY, I AM</p>
-      <h1>Sahasra Kondapalli</h1>
-      <p>I'm <i>technically</i> an amateur programmer but this will be where I 
-      document everything I do. I'm currently a Computer Science Freshman
-      at USF. You'll see me on github, but doing nothing (I will do something).
-      My current project is called MOIRA, a Pokemon style adventure game
-      based on Greek gods, where you get to be a greek god and restore
-      Olympus or choose to remake it.</p>
-    </section>
-    <article>
-      <h2 align=center>Projects</h2>
-      <p align=center>
-        This will house all of my tiny projects.
-      </p>
-      <div>
-        <h3 style="color: #f2f0e9" align = center>MOIRA</h3>
-        <p style="color: #e8e5d8">
-          <i>Ongoing</i>
-          <br>
-          A decision based adventure game that follows the Greek gods as
-          they work on rebuilding their places of power after the 
-          collapse of Olympus. Was it intentional? In any case, the
-          gods can't do much until they've restored their seats of
-          power.
-        </p>
-      </div>
-      <div>
-        <h3>Examinator</h3>
-        <p>
-          A program that helps students create practice tests using
-          the sample questions in their textbooks. It picks a random
-          assortment of questions to help the student create their own
-          review tests.
-        </p>
-      </div>
-      <div>
-        <h3>Building our Worlds</h3>
-        <p>
-          This is an application meant to assist writers in developing
-          their fictional worlds. It asks questions that help the 
-          user brainstorm and organize the various aspects of world
-          building to help create a world with true depth and realistic
-          features.
-        </p>
-      </div>
-      <div>
-        <h3>Homeobase</h3>
-        <p>
-          Based on personal databases, this application helps users
-          find relevant medicines based on their symptoms and conditions,
-          displaying an example to help the user ascertain whether
-          they got the right results.
-        </p>
-      </div>
-      <div>
-        <h3>StudyBuddies</h3>
-        <p>
-          This is a messaging app meant to connect people with similar
-          study needs so that people can study together.
-        </p>
-      </div>
-
-    </article>
-  </body>
+    <head>
+        <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            .projects {
+                display: grid;
+                grid-template-columns: auto auto;
+                background-color: #e8e5d8;
+            }
+            .projects > div {
+                background-color: #070740;
+                border: 3px dashed #e8e5d8;
+                padding: 10px;
+                text-align: center;
+            }
+            .projects > div > p {
+                font-family: 'Courier New', Courier, monospace;
+                font-size: 15px;
+                color:#e8e5d8;
+            }
+            .projects > div > h3 {
+                font-family: 'Donegal';
+                font-size: 30px;
+                color:bisque;
+            }
+            .header {
+                background-color: #070740;
+                text-align: center;
+                font-size: 35px;
+                font-family: 'Donegal';
+                color: bisque;
+                padding: 5%;
+                border: 3px solid #e8e5d8;
+            }
+            a {
+                color:bisque;
+            }
+            a:hover {
+                color:#e8e5d8;
+            }
+        </style>
+        <title>Sahasra Kondapalli</title>
+    </head>
+    <body>
+        <div class = 'header'>
+            <h1> Sahasra Kondapalli </h1>
+        </div>
+        <div class = 'header' style = 'padding:5px; font-size:25px'>
+            <h1>Projects</h1>
+        </div>
+        <div class="projects">
+            <div>
+                <h3>MOIRA</h3>
+                <p>
+                    <i>Ongoing</i>
+                    <br>
+                    An decision based adventure game, built in the 
+                    isometric perspective with pixel art, MOIRA
+                    is a video game following the main character
+                    through their adventure through the worlds of Greek
+                    inspired gods as they try to mend the broken 
+                    system.
+                </p>
+                <a href="https://github.com/Neural-keeper/moira">Github</a>
+            </div>
+            <div>
+                <h3>Worldastical</h3>
+                <p>
+                    <i>Ongoing</i>
+                    <br>
+                    An application made by author for authors who spend
+                    a little too long with the fragments of the world 
+                    they're building. It helps them formulate the essentials
+                    and look at the bigger picture using user input and 
+                    curated questions.
+                </p>
+            </div>
+            <div>
+                <h3>Botanibase</h3>
+                <p>
+                    <i>Ongoing</i>
+                    A barebones python project meant to help beginner 
+                    garderners find information about which plants to
+                    plant when and care instructions.
+                </p>
+            </div>  
+            <div>
+                <h3>Examinator</h3>
+                <p>
+                    <i>Ongoing</i>
+                    Students often struggle to find review tests, but what
+                    about the questions already in their books? This 
+                    application helps create a random assortment of 
+                    questions based on user input to help students
+                    self-brew their own review tests.
+                </p>
+                <a href="https://sahasrakondapalli43-gmail-com.trinket.io/sites/examinator">Demo</a>
+            </div>
+        </div>
+    </body>
 </html>
