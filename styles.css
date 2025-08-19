@@ -277,7 +277,7 @@ h2 {
     width: 100vw;
     height: 100vh;
     position: relative;
-    perspective: 1000vw;
+    perspective: 500vw;
 }
 
 
@@ -308,7 +308,45 @@ h2 {
     transform: rotateY(288deg) translateZ(46vw);
 }
 
+.previous-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 10px 20px;
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background: #e8968b;
+    color: #f1d4cf;
+}
 
+.previous-button:hover {
+    background: #130d15;
+    transition: all 0.3s ease;
+}
+
+.next-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 10px 20px;
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background: #e8968b;
+    color: #f1d4cf;
+}
+
+.next-button:hover {
+    background: #130d15;
+    transition: all 0.3s ease;
+}
 
 
 
@@ -383,6 +421,10 @@ footer p {
     float: left;
 }
 
+.spacer {
+    width: 33.33vw;
+}
+
 .buttons {
     width: 4vw;
     height: 4vw;
@@ -396,6 +438,80 @@ footer p {
 .buttons:hover {
     background-color: #e8968b;
 }
+
+
+
+.projects_class_2 {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    background-color: #352339;
+}
+
+.projects_p {
+    display: block;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    padding: 5vh 0;
+}
+
+.project_p {
+    height: 80vh;
+    width: 80vw;
+    background-color: #f1d4cf;
+    border-radius: 5rem;
+    border: 5px solid #875991;
+    padding: 2rem;
+    text-align: center;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+
+a {
+    text-decoration: none;
+}
+
+.project_p img {
+    height: 35vh;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 2rem;
+    border: 3px solid #875991;
+}
+
+.project_p h2 {
+    color: #875991;
+    font-size: 7vh;
+    background-color: #cbaaa9;
+    border-radius: 2rem;
+    width: 100%;
+    margin: 3px;
+}
+
+.project_p p {
+    font-size: 16px;
+    font-family: "Special Elite", system-ui;
+    font-weight: 300;
+    font-style: normal;
+    background-color: #cbaaa9;
+    color: #875991;
+    border-radius: 2rem;
+    padding: 1rem;
+}
+
+.project_p:hover {
+    box-shadow: 0 10px 5px #130d15;
+    background-color: #875991;
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+}
+
+
+
 
 
 @media screen and (max-width: 960px) {
@@ -493,20 +609,17 @@ footer p {
         height: 100vh;
     }
 
-    .project {
-        visibility: hidden;
-    }
-
-    .projects {
-        visibility: hidden;
-    }
-
-    .carousel {
-        visibility: hidden;
+    .Project_Class {
+        display: none;
     }
 
     .controls {
         visibility: hidden;
+    }
+
+    .projects_class_2 {
+        visibility: visible;
+        display: block;
     }
 
     #mobile-menu.is.active .bar:nth-child(2) {
